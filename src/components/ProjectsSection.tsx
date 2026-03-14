@@ -6,6 +6,7 @@ const projects = [
     description: "Built an AI-powered secure online assessment platform with authentication, protected workflows, and automated evaluation. Integrated AI-based suspicious activity detection.",
     tech: ["React", "Spring Boot", "PostgreSQL", "AI"],
     icon: Shield,
+    github: "https://github.com/utkarshun/Talentlens-platform",
     highlights: ["AI Suspicious Activity Detection", "Secure Workflows", "Automated Evaluation"],
   },
   {
