@@ -35,10 +35,13 @@ const skillCategories = [
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="py-20 relative">
-      <div className="container mx-auto px-6">
+    <section id="skills" className="py-20 relative overflow-hidden">
+      {/* Background Glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40rem] h-[40rem] bg-accent/10 rounded-full blur-[150px] mix-blend-screen pointer-events-none" />
+
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <p className="font-mono text-primary mb-2">{"<skills>"}</p>
+          <p className="font-mono animate-gradient-text font-bold mb-2">{"<skills>"}</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Technical Arsenal</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             A comprehensive toolkit spanning full-stack development, DevOps automation, and cybersecurity.
@@ -62,7 +65,7 @@ const SkillsSection = () => {
                 {category.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm font-mono hover:bg-gradient-to-r hover:from-primary/20 hover:to-accent/20 hover:text-white hover:scale-105 transition-all duration-300 cursor-default shadow-sm hover:shadow-md"
+                    className="px-3 py-1 bg-primary/10 border border-primary/20 text-foreground rounded-full text-sm font-mono hover:bg-gradient-vibrant hover:text-white hover:scale-110 hover:border-transparent transition-all duration-300 cursor-default shadow-[0_0_10px_hsl(var(--primary)/0.1)] hover:shadow-[0_0_20px_hsl(var(--accent)/0.5)]"
                   >
                     {skill}
                   </span>
@@ -72,7 +75,7 @@ const SkillsSection = () => {
           ))}
         </div>
 
-        <p className="font-mono text-primary text-center mt-12">{"</skills>"}</p>
+        <p className="font-mono animate-gradient-text font-bold text-center mt-12">{"</skills>"}</p>
       </div>
     </section>
   );

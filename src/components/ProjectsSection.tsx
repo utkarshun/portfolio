@@ -37,12 +37,13 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="py-20 relative">
-      <div className="absolute inset-0 grid-pattern opacity-10" />
+    <section id="projects" className="py-20 relative overflow-hidden">
+      <div className="absolute inset-0 grid-pattern opacity-30 z-0 bg-background" />
+      <div className="absolute top-1/4 right-0 w-[30rem] h-[30rem] bg-primary/10 rounded-full blur-[120px] mix-blend-screen pointer-events-none" />
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <p className="font-mono text-primary mb-2">{"// Featured Work"}</p>
+          <p className="font-mono animate-gradient-text font-bold mb-2">{"// Featured Work"}</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Projects</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             A selection of projects showcasing full-stack development and security expertise.
@@ -98,7 +99,7 @@ const ProjectsSection = () => {
                 {project.tech.map((tech) => (
                   <span
                     key={tech}
-                    className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-xs hover:bg-gradient-to-r hover:from-primary/20 hover:to-accent/20 transition-all duration-300 cursor-default"
+                    className="px-3 py-1 bg-accent/10 border border-accent/20 text-foreground rounded-full text-xs hover:bg-gradient-vibrant hover:text-white hover:border-transparent transition-all duration-300 cursor-default shadow-[0_0_10px_hsl(var(--accent)/0.1)] hover:shadow-[0_0_15px_hsl(var(--primary)/0.4)]"
                   >
                     {tech}
                   </span>

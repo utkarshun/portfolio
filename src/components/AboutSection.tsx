@@ -25,10 +25,13 @@ const highlights = [
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-20 bg-card/30">
-      <div className="container mx-auto px-6">
+    <section id="about" className="py-20 bg-card/30 relative overflow-hidden">
+      {/* Background Glow */}
+      <div className="absolute bottom-0 left-0 w-[40rem] h-[40rem] bg-accent/5 rounded-full blur-[150px] mix-blend-screen pointer-events-none" />
+
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <p className="font-mono text-primary mb-2">{"// About Me"}</p>
+          <p className="font-mono animate-gradient-text font-bold mb-2">{"// About Me"}</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Who I Am</h2>
         </div>
 

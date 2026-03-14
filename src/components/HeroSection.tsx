@@ -5,11 +5,11 @@ const HeroSection = () => {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
       {/* Background Grid */}
-      <div className="absolute inset-0 grid-pattern opacity-30" />
+      <div className="absolute inset-0 grid-pattern opacity-30 z-0 bg-background" />
       
-      {/* Gradient Orbs */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
+      {/* Vibrant Gradient Orbs */}
+      <div className="absolute top-1/4 left-1/4 w-[30rem] h-[30rem] bg-primary/20 rounded-full blur-[120px] mix-blend-screen pointer-events-none animate-pulse-glow" />
+      <div className="absolute bottom-1/4 right-1/4 w-[30rem] h-[30rem] bg-accent/20 rounded-full blur-[120px] mix-blend-screen pointer-events-none animate-pulse-glow" style={{ animationDelay: '1s' }} />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
@@ -33,10 +33,10 @@ const HeroSection = () => {
               Hello World, I'm
             </p>
             <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              <span className="text-gradient">Utkarsh Kher</span>
+              <span className="animate-gradient-text">Utkarsh Kher</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-6 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              Full-Stack Developer & <span className="text-accent">Security Specialist</span>
+              Full-Stack Developer & <span className="animate-gradient-text font-bold text-transparent bg-clip-text bg-gradient-vibrant">Security Specialist</span>
             </p>
             <p className="text-muted-foreground mb-8 leading-relaxed animate-fade-in" style={{ animationDelay: '0.4s' }}>
               Building scalable applications and securing digital infrastructure. 
