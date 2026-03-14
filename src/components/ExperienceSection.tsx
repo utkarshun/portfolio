@@ -2,6 +2,17 @@ import { Briefcase, GraduationCap, Award } from "lucide-react";
 
 const experiences = [
   {
+    title: "Software Engineering Intern",
+    company: "Leadics",
+    period: "Mar 2026 – Present",
+    type: "Remote",
+    description: [
+      "Assisting in the development of full-stack enterprise applications using Angular and Java.",
+      "Building a multi-page customer data management interface with CSV parsing and real-time data grid rendering.",
+      "Implementing dynamic routing and detailed customer profile views to streamline data accessibility.",
+    ],
+  },
+  {
     title: "Red Hat Intern",
     company: "Red Hat",
     period: "Dec 2024 – Jan 2025",
