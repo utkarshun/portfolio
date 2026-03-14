@@ -53,10 +53,11 @@ const ProjectsSection = () => {
           {projects.map((project, index) => (
             <div
               key={project.title}
-              className="glass-card p-6 hover:border-primary/50 transition-all duration-300 group"
+              className="glass-card interactive-card p-6 transition-all duration-500 group animate-in fade-in slide-in-from-bottom-8"
+              style={{ animationDelay: `${index * 0.15}s`, animationFillMode: 'both' }}
             >
               <div className="flex items-start justify-between mb-4">
-                <div className="p-3 bg-primary/10 rounded-lg text-primary">
+                <div className="p-3 bg-primary/10 rounded-lg text-primary group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
                   <project.icon className="w-6 h-6" />
                 </div>
                 <div className="flex gap-2">
@@ -97,7 +98,7 @@ const ProjectsSection = () => {
                 {project.tech.map((tech) => (
                   <span
                     key={tech}
-                    className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-xs"
+                    className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-xs hover:bg-gradient-to-r hover:from-primary/20 hover:to-accent/20 transition-all duration-300 cursor-default"
                   >
                     {tech}
                   </span>

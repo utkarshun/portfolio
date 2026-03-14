@@ -14,15 +14,15 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           {/* Profile Image */}
-          <div className="relative animate-fade-in">
-            <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/30 animate-pulse-glow">
+          <div className="relative animate-fade-in group">
+            <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/30 animate-float group-hover:border-primary transition-colors duration-500 shadow-[0_0_30px_hsl(var(--primary)/0.2)] group-hover:shadow-[0_0_40px_hsl(var(--primary)/0.4)]">
               <img
                 src={profilePhoto}
                 alt="Utkarsh Kher"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
             </div>
-            <div className="absolute -bottom-2 -right-2 bg-card border border-primary/50 rounded-lg px-3 py-1.5 font-mono text-sm text-primary">
+            <div className="absolute -bottom-2 -right-2 bg-card border border-primary/50 shadow-lg rounded-lg px-3 py-1.5 font-mono text-sm text-primary animate-bounce">
               <span className="animate-pulse">●</span> Open to work
             </div>
           </div>
@@ -48,20 +48,20 @@ const HeroSection = () => {
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start mb-8 animate-fade-in" style={{ animationDelay: '0.5s' }}>
               <a
                 href="#projects"
-                className="px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:opacity-90 transition-all flex items-center gap-2"
+                className="px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:opacity-100 hover:shadow-[0_0_20px_hsl(var(--primary)/0.4)] hover:-translate-y-1 transition-all flex items-center gap-2"
               >
                 View Projects <ExternalLink className="w-4 h-4" />
               </a>
               <a
                 href="/resume/UTKARSH_SDE.pdf"
                 download
-                className="px-6 py-3 border border-primary/50 text-primary rounded-lg font-semibold hover:bg-primary/10 transition-all flex items-center gap-2"
+                className="px-6 py-3 border border-primary/50 text-primary rounded-lg font-semibold hover:bg-primary/10 hover:shadow-[0_0_15px_hsl(var(--primary)/0.2)] hover:-translate-y-1 transition-all flex items-center gap-2"
               >
                 <Download className="w-4 h-4" /> Download Resume
               </a>
               <a
                 href="#contact"
-                className="px-6 py-3 border border-accent/50 text-accent rounded-lg font-semibold hover:bg-accent/10 transition-all"
+                className="px-6 py-3 border border-accent/50 text-accent rounded-lg font-semibold hover:bg-accent/10 hover:shadow-[0_0_15px_hsl(var(--accent)/0.2)] hover:-translate-y-1 transition-all"
               >
                 Get In Touch
               </a>
@@ -73,31 +73,31 @@ const HeroSection = () => {
                 href="https://github.com/utkarshun"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-secondary rounded-lg text-muted-foreground hover:text-primary hover:bg-secondary/80 transition-all"
+                className="p-3 bg-secondary rounded-lg text-muted-foreground hover:text-primary hover:bg-secondary/80 hover:-translate-y-1 hover:shadow-[0_0_15px_hsl(var(--primary)/0.15)] transition-all group"
               >
-                <Github className="w-5 h-5" />
+                <Github className="w-5 h-5 group-hover:scale-110 transition-transform" />
               </a>
               <a
                 href="https://linkedin.com/in/utkarshkher"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-secondary rounded-lg text-muted-foreground hover:text-primary hover:bg-secondary/80 transition-all"
+                className="p-3 bg-secondary rounded-lg text-muted-foreground hover:text-primary hover:bg-secondary/80 hover:-translate-y-1 hover:shadow-[0_0_15px_hsl(var(--primary)/0.15)] transition-all group"
               >
-                <Linkedin className="w-5 h-5" />
+                <Linkedin className="w-5 h-5 group-hover:scale-110 transition-transform" />
               </a>
               <a
                 href="https://leetcode.com/u/utkarshkher"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-secondary rounded-lg text-muted-foreground hover:text-primary hover:bg-secondary/80 transition-all"
+                className="p-3 bg-secondary rounded-lg text-muted-foreground hover:text-primary hover:bg-secondary/80 hover:-translate-y-1 hover:shadow-[0_0_15px_hsl(var(--primary)/0.15)] transition-all group"
               >
-                <Code2 className="w-5 h-5" />
+                <Code2 className="w-5 h-5 group-hover:scale-110 transition-transform" />
               </a>
               <a
                 href="mailto:kherutkarsh54@gmail.com"
-                className="p-3 bg-secondary rounded-lg text-muted-foreground hover:text-primary hover:bg-secondary/80 transition-all"
+                className="p-3 bg-secondary rounded-lg text-muted-foreground hover:text-primary hover:bg-secondary/80 hover:-translate-y-1 hover:shadow-[0_0_15px_hsl(var(--primary)/0.15)] transition-all group"
               >
-                <Mail className="w-5 h-5" />
+                <Mail className="w-5 h-5 group-hover:scale-110 transition-transform" />
               </a>
             </div>
           </div>

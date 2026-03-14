@@ -49,11 +49,11 @@ const SkillsSection = () => {
           {skillCategories.map((category, index) => (
             <div
               key={category.title}
-              className="glass-card p-6 hover:border-primary/50 transition-all duration-300 group"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="glass-card interactive-card p-6 transition-all duration-500 group animate-in zoom-in-95"
+              style={{ animationDelay: `${index * 0.1}s`, animationFillMode: 'both' }}
             >
               <div className="flex items-center gap-3 mb-4">
-                <div className="p-2 bg-primary/10 rounded-lg text-primary group-hover:bg-primary/20 transition-colors">
+                <div className="p-2 bg-primary/10 rounded-lg text-primary group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
                   <category.icon className="w-5 h-5" />
                 </div>
                 <h3 className="font-semibold text-lg">{category.title}</h3>
@@ -62,7 +62,7 @@ const SkillsSection = () => {
                 {category.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm font-mono hover:bg-primary/20 hover:text-primary transition-colors cursor-default"
+                    className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm font-mono hover:bg-gradient-to-r hover:from-primary/20 hover:to-accent/20 hover:text-white hover:scale-105 transition-all duration-300 cursor-default shadow-sm hover:shadow-md"
                   >
                     {skill}
                   </span>

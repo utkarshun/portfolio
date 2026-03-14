@@ -55,9 +55,9 @@ const AboutSection = () => {
             {highlights.map((item, index) => (
               <div
                 key={item.title}
-                className="text-center p-6 rounded-lg bg-secondary/50 hover:bg-primary/10 transition-all group"
+                className="text-center p-6 rounded-lg bg-secondary/50 interactive-card-subtle transition-all duration-300 group"
               >
-                <div className="inline-flex p-3 bg-primary/10 rounded-lg text-primary mb-4 group-hover:scale-110 transition-transform">
+                <div className="inline-flex p-3 bg-primary/10 rounded-lg text-primary mb-4 group-hover:scale-110 group-hover:bg-primary/20 transition-all duration-300">
                   <item.icon className="w-6 h-6" />
                 </div>
                 <h3 className="font-semibold mb-2">{item.title}</h3>
