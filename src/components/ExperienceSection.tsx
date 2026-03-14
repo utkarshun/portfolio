@@ -42,7 +42,7 @@ const education = {
   specialization: "Cybersecurity",
   institution: "RNS Institute of Technology, Bangalore",
   period: "2022 – 2026",
-  cgpa: "8.5 / 10",
+  cgpa: "8.8 / 10",
 };
 
 const certifications = [
