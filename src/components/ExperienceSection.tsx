@@ -27,7 +27,7 @@ const experiences = [
   {
     title: "Placement Volunteer",
     company: "RNS Institute of Technology",
-    period: "2024 – Present",
+    period: "2024 – 2025",
     description: [
       "Coordinated campus placement drives attended by 500+ students",
       "Conducted workshops on secure coding and cybersecurity interview preparation",
