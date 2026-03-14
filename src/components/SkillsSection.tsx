@@ -9,7 +9,7 @@ const skillCategories = [
   {
     title: "Frameworks",
     icon: Terminal,
-    skills: ["React", "Node.js", "Express.js", "Flask", "Spring Boot"],
+    skills: ["React", "Angular JS", "Node.js", "Express.js", "Flask", "Spring Boot"],
   },
   {
     title: "Databases",

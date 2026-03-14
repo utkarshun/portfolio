@@ -2,6 +2,13 @@ import { Github, ExternalLink, Shield, Bot, Navigation, Network } from "lucide-r
 
 const projects = [
   {
+    title: "TalentLens Platform",
+    description: "Built an AI-powered secure online assessment platform with authentication, protected workflows, and automated evaluation. Integrated AI-based suspicious activity detection.",
+    tech: ["React", "Spring Boot", "PostgreSQL", "AI"],
+    icon: Shield,
+    highlights: ["AI Suspicious Activity Detection", "Secure Workflows", "Automated Evaluation"],
+  },
+  {
     title: "Event Ticket Platform",
     description: "Engineered a ticketing platform with QR code generation and validation, reducing ticket fraud by 90%. Features role-based authentication and handles 5K+ tickets with sub-second response.",
     tech: ["Spring Boot", "PostgreSQL", "QR Code", "REST API"],
@@ -18,18 +25,12 @@ const projects = [
     highlights: ["30% productivity boost", "Voice recognition", "Cross-session recall"],
   },
   {
-    title: "GPS Spoofing Research",
+    title: "GPS-Spoofing-MITM-Ambulance",
     description: "Simulated GPS spoofing attacks on automotive systems by generating fake NMEA signals, highlighting navigation vulnerabilities. Proposed detection mechanisms with 40% improved accuracy.",
     tech: ["Python", "Kali Linux", "NMEA", "Metasploit"],
     icon: Navigation,
+    github: "https://github.com/utkarshun/GPS-Spoofing-MITM-Ambulance",
     highlights: ["40% detection improvement", "Security research", "Mitigation strategies"],
-  },
-  {
-    title: "TalentLens Platform",
-    description: "Built an AI-powered secure online assessment platform with authentication, protected workflows, and automated evaluation. Integrated AI-based suspicious activity detection.",
-    tech: ["React", "Spring Boot", "PostgreSQL", "AI"],
-    icon: Shield,
-    highlights: ["AI Suspicious Activity Detection", "Secure Workflows", "Automated Evaluation"],
   },
 ];
 
