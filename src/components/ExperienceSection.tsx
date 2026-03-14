@@ -141,13 +141,25 @@ const ExperienceSection = () => {
               </div>
             </div>
 
-            {/* Achievement */}
-            <div className="glass-card p-6 border border-primary/30 glow-border">
-              <div className="flex items-center gap-3">
-                <span className="text-3xl">🏆</span>
-                <div>
-                  <p className="font-bold text-primary text-2xl">200+</p>
-                  <p className="text-muted-foreground text-sm">DSA Problems Solved on LeetCode</p>
+            {/* Achievements */}
+            <div className="space-y-4">
+              <div className="glass-card interactive-card-subtle p-6 border border-primary/30 glow-border group">
+                <div className="flex items-center gap-4">
+                  <span className="text-4xl group-hover:scale-110 group-hover:-rotate-12 transition-transform">🏆</span>
+                  <div>
+                    <p className="font-bold animate-gradient-text text-xl mb-1">1st Prize Winner</p>
+                    <p className="text-muted-foreground text-sm leading-relaxed">College Tech Expo for GPS Spoofing Mitigation Research Project</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="glass-card interactive-card-subtle p-6 border border-accent/20 hover:border-accent/40 group">
+                <div className="flex items-center gap-4">
+                  <span className="text-4xl group-hover:scale-110 transition-transform">💻</span>
+                  <div>
+                    <p className="font-bold text-accent text-xl mb-1">200+ DSA Problems</p>
+                    <p className="text-muted-foreground text-sm">Solved on LeetCode optimizing for performance</p>
+                  </div>
                 </div>
               </div>
             </div>
