@@ -15,14 +15,14 @@ const HeroSection = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           {/* Profile Image */}
           <div className="relative animate-fade-in group">
-            <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/30 animate-float group-hover:border-primary transition-colors duration-500 shadow-[0_0_30px_hsl(var(--primary)/0.2)] group-hover:shadow-[0_0_40px_hsl(var(--primary)/0.4)]">
+            <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/30 group-hover:border-primary transition-colors duration-500 shadow-[0_0_30px_hsl(var(--primary)/0.2)] group-hover:shadow-[0_0_40px_hsl(var(--primary)/0.4)]">
               <img
                 src={profilePhoto}
                 alt="Utkarsh Kher"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
             </div>
-            <div className="absolute -bottom-2 -right-2 bg-card border border-primary/50 shadow-lg rounded-lg px-3 py-1.5 font-mono text-sm text-primary animate-bounce">
+            <div className="absolute -bottom-2 -right-2 bg-card border border-primary/50 shadow-lg rounded-lg px-3 py-1.5 font-mono text-sm text-primary">
               <span className="animate-pulse">●</span> Open to work
             </div>
           </div>
@@ -52,13 +52,29 @@ const HeroSection = () => {
               >
                 View Projects <ExternalLink className="w-4 h-4" />
               </a>
-              <a
-                href="/resume/UTKARSH_SDE.pdf"
-                download
-                className="px-6 py-3 border border-primary/50 text-primary rounded-lg font-semibold hover:bg-primary/10 hover:shadow-[0_0_15px_hsl(var(--primary)/0.2)] hover:-translate-y-1 transition-all flex items-center gap-2"
-              >
-                <Download className="w-4 h-4" /> Download Resume
-              </a>
+              <div className="relative group">
+                <button
+                  className="px-6 py-3 border border-primary/50 text-primary rounded-lg font-semibold hover:bg-primary/10 hover:shadow-[0_0_15px_hsl(var(--primary)/0.2)] hover:-translate-y-1 transition-all flex items-center gap-2"
+                >
+                  <Download className="w-4 h-4" /> Download Resume
+                </button>
+                <div className="absolute top-full left-0 mt-2 w-56 bg-card border border-primary/20 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 overflow-hidden flex flex-col">
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1teVfGRbKBMkTFjmBUl-e6p8q9qHHxgvL"
+                    className="px-4 py-3 text-sm font-medium text-foreground hover:bg-primary/10 hover:text-primary transition-colors flex items-center gap-2"
+                  >
+                    <Download className="w-4 h-4" />
+                    SDE Resume
+                  </a>
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1gdvgiNWsH9sWWRSe4AOU0GWE4ut3MA-y"
+                    className="px-4 py-3 text-sm font-medium text-foreground hover:bg-primary/10 hover:text-primary transition-colors border-t border-border flex items-center gap-2"
+                  >
+                    <Download className="w-4 h-4" />
+                    Cybersecurity Resume
+                  </a>
+                </div>
+              </div>
               <a
                 href="#contact"
                 className="px-6 py-3 border border-accent/50 text-accent rounded-lg font-semibold hover:bg-accent/10 hover:shadow-[0_0_15px_hsl(var(--accent)/0.2)] hover:-translate-y-1 transition-all"
