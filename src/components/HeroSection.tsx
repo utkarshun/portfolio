@@ -60,14 +60,14 @@ const HeroSection = () => {
                 </button>
                 <div className="absolute top-full left-0 mt-2 w-56 bg-card border border-primary/20 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 overflow-hidden flex flex-col">
                   <a
-                    href="https://drive.google.com/uc?export=download&id=1teVfGRbKBMkTFjmBUl-e6p8q9qHHxgvL"
+                    href="https://drive.google.com/uc?export=download&id=1gdvgiNWsH9sWWRSe4AOU0GWE4ut3MA-y"
                     className="px-4 py-3 text-sm font-medium text-foreground hover:bg-primary/10 hover:text-primary transition-colors flex items-center gap-2"
                   >
                     <Download className="w-4 h-4" />
                     SDE Resume
                   </a>
                   <a
-                    href="https://drive.google.com/uc?export=download&id=1gdvgiNWsH9sWWRSe4AOU0GWE4ut3MA-y"
+                    href="https://drive.google.com/uc?export=download&id=1teVfGRbKBMkTFjmBUl-e6p8q9qHHxgvL"
                     className="px-4 py-3 text-sm font-medium text-foreground hover:bg-primary/10 hover:text-primary transition-colors border-t border-border flex items-center gap-2"
                   >
                     <Download className="w-4 h-4" />
