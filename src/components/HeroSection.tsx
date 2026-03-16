@@ -96,7 +96,7 @@ const HeroSection = () => {
                 <Github className="w-5 h-5 group-hover:scale-110 transition-transform" />
               </a>
               <a
-                href="https://www.linkedin.com/in/utkarsh-kher-654a1a282/"
+                href="https://www.linkedin.com/in/utkarsh-kher-654a1a282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-secondary rounded-lg text-muted-foreground hover:text-primary hover:bg-secondary/80 hover:-translate-y-1 hover:shadow-[0_0_15px_hsl(var(--primary)/0.15)] transition-all group"
