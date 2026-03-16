@@ -72,7 +72,7 @@ const ContactSection = () => {
                 </a>
 
                 <a
-                  href="https://linkedin.com/in/utkarshkher"
+                  href="https://www.linkedin.com/in/utkarsh-kher-654a1a282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 bg-secondary rounded-lg hover:bg-primary/10 hover:border-primary/50 border border-transparent transition-all group"
